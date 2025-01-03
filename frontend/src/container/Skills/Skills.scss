@@ -100,10 +100,14 @@
     justify-content: flex-start;
     align-items: flex-start;
     margin: 1rem 0;
+
+    @media screen and (max-width: 900px) {
+      justify-content: center;
+    }
   }
   
   .app__skills-exp-works {
-    flex: 1;
+    
   
     .app__skills-exp-work {
       display: flex;
@@ -123,6 +127,11 @@
         margin-top: 5px;
       }
     }
+
+    @media screen and (min-width:900px) {
+      flex: 1;
+    }
+
   }
   
   .app__skills-exp-year {
