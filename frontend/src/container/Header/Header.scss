@@ -132,8 +132,8 @@
     }
   
     div:nth-child(3) {
-      width: 70px;
-      height: 70px;
+      width: 90px;
+      height: 90px;
     }
   
     @media screen and (min-width: 2000px) {
@@ -166,8 +166,8 @@
   }
   
   .app__header-img {
-    flex: 1;
-    height: 100%;
+    flex: 1.2;
+    // height: 100%;
   
     display: flex;
     justify-content: flex-end;
