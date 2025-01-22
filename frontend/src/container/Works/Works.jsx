@@ -37,24 +37,33 @@ const Works = () => {
   return (
     <>
       <h2 className="head-text">
-        My creative <span>portfolio</span> section
+        My creative <span>projects</span> section
       </h2>
+      <h4 className="bold-text" style={{ marginTop: 10 }}>
+        Hover to see link to <span>product</span> and <span>code</span>
+      </h4>
       <div className="app__work-filter">
-        {["UI/UX", "Web app", "Mobile app", "React JS", "All"].map(
-          (item, index) => (
-            <div
-              key={index}
-              onClick={() => {
-                handleWorkFilter(item);
-              }}
-              className={`app__work-filter-item app__flex p-text ${
-                activeFilter === item ? "item-active" : ""
-              }`}
-            >
-              {item}
-            </div>
-          )
-        )}
+        {[
+          "Web",
+          "Mobile",
+          "AI",
+          "Javascript",
+          "Typescript",
+          "Python",
+          "All",
+        ].map((item, index) => (
+          <div
+            key={index}
+            onClick={() => {
+              handleWorkFilter(item);
+            }}
+            className={`app__work-filter-item app__flex p-text ${
+              activeFilter === item ? "item-active" : ""
+            }`}
+          >
+            {item}
+          </div>
+        ))}
       </div>
 
       <motion.div
@@ -120,6 +129,6 @@ const Works = () => {
 
 export default AppWrap(
   MotionWrap(Works, "app__works"),
-  "work",
-  "app__primarybg"
+  "projects",
+  "app__whitebg"
 );
