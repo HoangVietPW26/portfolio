@@ -8,7 +8,7 @@ export const experiencesType = defineType({
         {
             name:'year',
             title:'Year',
-            type:'string'
+            type:'number'
         },
         {
             name:'works',
