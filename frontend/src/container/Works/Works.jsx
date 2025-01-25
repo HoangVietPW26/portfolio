@@ -70,6 +70,7 @@ const Works = () => {
           "Web",
           "Mobile",
           "AI",
+          "System",
           "Javascript",
           "Typescript",
           "Python",
