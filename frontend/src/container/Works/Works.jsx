@@ -18,7 +18,8 @@ const Works = () => {
   const worksPerPage = 6;
 
   useEffect(() => {
-    const query = '*[_type == "works"]';
+    const query =
+      '*[_type == "works"] | order(priority asc) | order(createdAt desc)';
     client.fetch(query).then((data) => {
       setWorks(data);
       setFilterWork(data);
